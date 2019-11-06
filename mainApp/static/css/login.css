@@ -1,0 +1,28 @@
+html,body {
+    position: relative;
+    
+  height:100%;
+  width:100%;
+  margin:0;
+}
+/* body , body {
+  display:flex;
+} */
+form {
+  margin:auto;
+}
+
+.Absolute-Center {
+  margin: auto;
+  /* position: absolute; */
+
+   left: 0;  right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+} 

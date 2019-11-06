@@ -1,0 +1,50 @@
+{% load static %}
+{% include  'header.html' %} 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yoga classes at Prayas</title>
+  <meta name="viewport" content="width=device-width, initial-scal=1.0">
+  <link rel="stylesheet" href="{% static "css/yoga.css" %}">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+ 
+   <div class="fix-bg">
+   <h1> Yoga</h1>
+  </div>
+  <div class="breadcrump">
+    <span><a href="#home" title="Home">Home</a></span> 
+    >
+    <span><a href="#Facility" title="Facility">Facility</a></span> 
+    >
+    <span>Yoga</span>
+  </div>
+  <hr>
+<div class="row">
+  <div data-aos="fade-right"  class="col-7">
+    <p>Yoga has been proved to be good for every aspects of a human life. Hence prayas has a different session for the yoga.</p>
+    <p><img src="{% static 'img/imgf/yoga1.jpg' %}" class="resize1"></p>
+  </div>
+  <div data-aos="fade-right" class="col-5">
+    <p><img src="{% static 'img/imgf/yoga2.jpg' %}" class="resize1"></p>
+    <p><img src="{% static 'img/imgf/yoga3.jpg' %}" class="resize1"></p>
+  </div>
+</div>
+<script>
+  AOS.init();
+</script>
+{% include  'footer.html' %} 
+</body>
+</html>
+
+
+
+
+
+
+
+
+

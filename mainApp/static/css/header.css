@@ -1,0 +1,358 @@
+body { font-family: 'Saira Semi Condensed', sans-serif !important;
+       background-color: #FFFFF0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+
+/* Create three unequal hcolumns that floats next to each other */
+.hcolumn {
+    float: left;
+    padding: 10px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #384366;
+  
+  padding-bottom: 10px;
+  padding-top: 0px;
+  
+  
+}
+.hcolumn.side {
+    width: 40%;
+}
+
+/* Middle hcolumn */
+.hcolumn.middle {
+    width: 20%;
+
+}
+
+.topnav .bal a
+{
+  font-family: 'Saira Semi Condensed', sans-serif !important;
+
+ font-size:2.5vw;
+
+}
+.topnav .balh a
+{
+  font-family: 'Saira Semi Condensed', sans-serif !important;
+
+ font-size:16px;
+
+}
+
+
+.topnav a {
+  
+  float: left;
+  position: relative;
+  z-index: 2;
+  display: block;
+  color: #ffffff;
+  text-align-last: left;
+  padding: 0.5vw 0.5vw;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left:1vw;
+  padding-left:2vw;
+
+  
+}
+
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float:left;
+    overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+    font-size:16px;   
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.5vw 0.5vw;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    margin-left:1vw;
+    padding-left:4vw;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#384366;
+    min-width: 160px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    margin-left:40px;
+      
+}
+
+.dropdown-content a {
+    float: none;
+    color:black;
+    margin: 0px;
+    margin-top: 0.5vw;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+
+   
+}
+
+.tophead a:hover
+{
+	color: orange;
+  transition: 0.6s ease;
+}
+
+.topnav .bal a:hover
+{
+	color: white;
+}
+.topnav .balh a:hover
+{
+  color: orange;
+  transition: 0.6s ease;
+}
+
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #384366;
+  color: orange;
+   transition: 0.6s ease;
+}
+
+.dropdown-content a:hover {
+    color:orange;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+
+.topnav .bal a
+{
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.topnav .balh a
+{
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+
+
+
+
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    padding-right: 20px;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float:none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none; padding-left: 9px; }
+  .topnav.responsive .dropdown-content {position: relative; background-color:white;}
+  .topnav.responsive .dropdown-content a {position: relative; color:black;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+   
+    .head{
+        font-size: 25px;
+        margin-left:2%;
+        height:15px;
+    }
+
+    .hcolumn.left {
+    width: 50%;
+    
+}
+
+.hcolumn.right {
+  padding-left: 4px;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.tophead
+{
+  background-color: #384366;
+ 
+}
+
+
+.tophead a
+{
+
+  float: right;
+  display: block;
+  color: white ;
+  position: relative;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: justify;
+  text-align-last:left;
+  margin-right: 4vw;
+
+}
+
+/* Clear floats after the hcolumns */
+.tophead:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hcolumn {
+    float: left;
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .hcolumn.left
+    {
+      display: none;
+      }
+       .hcolumn.right{
+        width: 100%;
+    }
+   
+}
+
+hr
+{
+  opacity: 0.2;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .topnav a
+  {
+    padding: 0.3vw 0.3vw;
+    padding-left:2vw;
+    margin: 0vw;
+  }
+
+
+  .dropdown-content a
+  {
+    padding: 0.6vw 0.6vw;
+    margin-top: 1vw;
+    font-size: 15px;
+
+
+  }
+.dropdown-content{
+  min-width: 120px;
+}
+  .dropdown .dropbtn
+  {
+    padding: 0.3vw .0.3vw;
+    padding-left: 3.5vw;
+    margin-left:0.8vw;
+    
+}
+
+.topnav  a
+{
+  font-size: 15px;
+}
+
+  } 
+
+  
+
+  @media screen and (max-width: 1000px) {
+
+  .topnav a
+  {
+    padding: 0.3vw 0.3vw;
+    padding-left:1.5vw;
+    margin: 0vw;
+  }
+
+.topnav  a
+{
+  font-size: 15px;
+}
+
+  .dropdown-content a
+  {
+    padding: 0.6vw 0.6vw;
+    margin-top: 1.5vw;
+    font-size: 15px;
+
+
+  }
+.dropdown-content{
+  min-width: 120px;
+  margin: 1vw;
+}
+  .dropdown .dropbtn
+  {
+    padding: 0.3vw .0.3vw;
+    padding-left: 2.5vw;
+    margin-left:0.8vw;
+    
+}
+
+ 
+
+  } 
+
+  

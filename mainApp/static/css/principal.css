@@ -1,0 +1,150 @@
+.imgage {
+    float: right;
+     border: 10px dotted white;
+    margin: 0px 0px 5px 15px;
+    height: 160px;
+    width: 140px;
+    
+}
+.container-1{
+	margin-left: 3vw;
+	padding-left: 4vw;
+   margin-right:5vw;
+  padding-right: 15vw; 
+  margin-top: 3vw;
+}
+
+.container-2{
+    padding-left: : 5vw;
+  padding-right:5vw; 
+  padding-bottom: 60px;
+}
+
+
+.container-3{
+    margin-left: 3vw;
+    padding-left: 4vw;
+   margin-right:5vw;
+  padding-right: 15vw; 
+  margin-top: 10px;
+  margin-bottom: 120px;
+  
+  
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+   color:#404142;
+   font-family: 'Saira Semi Condensed', sans-serif;
+
+
+}
+.image{
+	height: 360px;
+	width: 120%;
+    
+}
+.fix-bg{
+		background-image: url('../img/principle/prayas1.JPG');
+		height: 360px;
+		width: 100%;
+		position: relative;
+		background-size: cover;
+	    background-attachment: fixed;
+	    overflow: hidden;
+		/*z-index: 1;*/
+	}
+	.fix-bg h1{
+		position: absolute;
+		top: 70%;
+		left: 10%;
+		bottom: auto;
+		right: auto;
+		text-align: left;
+		text-shadow:0 1px 10px rgba(0, 0, 0, 1);
+		text-transform: uppercase;
+		font-size: 2.2rem;
+		font-weight: bold;
+        color:white;
+        
+font-family: 'Saira Semi Condensed', sans-serif;
+
+
+	}
+
+
+
+.breadcrump{
+    margin-left: 4vw;
+    padding-left: 4vw;
+    margin-top: 10px;
+    color:#404142;
+font-family: 'Saira Semi Condensed', sans-serif;
+
+
+    }
+    .breadcrump span{
+        padding: 0 7px;
+        color: #FB7403;
+    }
+    .breadcrump span a{
+        text-decoration: none;
+        color: black;
+    }
+    .breadcrump span a:hover{
+        color:#FB7403;
+    }
+
+    video{
+    height: 300px;
+    width: 380px;
+}
+
+
+ @media screen and (max-width: 600px){
+    video{
+        height:130px;
+        width: 230px;
+    }
+    .imgage {
+    float: right;
+     border: 5px dotted white;
+    margin: 0px 0px 1px 3px;
+    height: 100px;
+    width: 80px;
+    
+}
+.container-1{
+	margin-left: 3vw;
+	padding-left: 5vw;
+   margin-right:3vw;
+  padding-right: 5vw; 
+  margin-top: 3vw;
+}
+
+.container-3{
+    margin-left: 3vw;
+    padding-left: 5vw;
+   margin-right:3vw;
+  padding-right: 5vw; 
+  margin-top: 5px;
+  margin-bottom: 120px;
+  
+  
+}
+.fix-bg{
+		background-image: url('../img/principle/prayas1.JPG');
+		height: 400px;
+		width: 100%;
+		position: relative;
+		background-size: cover;
+	    background-attachment: fixed;
+	    overflow: hidden;
+		/*z-index: 1;*/
+	}
+
+    }

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Saira Semi Condensed', sans-serif !important;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+    padding: 10px 10px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-bottom: 10px;
+}
+
+.column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+
+
+
+.container {
+  position: relative;
+  
+  max-width: 300px;
+  padding-bottom: 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  
+ 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+text-shadow: 0 4px 15px rgba(0,0,0,1);
+font-family: 'Saira Semi Condensed', sans-serif !important;
+font-weight: bold;
+
+
+}
+
+
+
+.container:hover .overlay {
+
+  opacity: 1;
+}
+
+
+.breadcrump{
+    margin-left: 4vw;
+    padding-left: 4vw;
+    margin-top: 10px;
+
+    }
+    .breadcrump span{
+        padding: 0 7px;
+        color: #FB7403;
+    }
+    .breadcrump span a{
+        text-decoration: none;
+        color: black;
+    }
+    .breadcrump span a:hover{
+        color:#FB7403;
+    }
+
+    .fix-bg{
+        background-image: url('../img/imgf/1.JPG');
+        height: 360px;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: -1;
+    }
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .row
+    {
+        padding-left: 15vw;
+    }
+
+    .fix-bg
+    {
+        width: 100%;
+         background-size: contain;
+         background-repeat: no-repeat;
+    }
+}
+
+
+.fix-bg h1{
+        position: absolute;
+        top: 75%;
+        left: 10%;
+        bottom: auto;
+        right: auto;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 1px 10px rgba(0,0,0,1);
+
+    }

@@ -1,0 +1,134 @@
+body{
+
+    color: black;
+
+}
+.breadcrump{
+    margin-left: 6vw;
+    padding-left: 2vw;
+    margin-top: 10px;
+
+	}
+	.breadcrump span{
+		padding: 0 7px;
+		color: #FB7403;
+	}
+	.breadcrump span a{
+        text-decoration: none;
+        color: black;
+                Font-size:1.0rem;
+        Color:#404142;
+        font-family: 'Saira Semi Condensed', sans-serif;
+	}
+	.breadcrump span a:hover{
+		color:#FB7403;
+	}
+
+
+
+
+hr {
+    opacity: .4;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#content{
+width: 80%;
+text-align: left;
+margin-block-start: 120px;
+padding:2px; 
+Font-size:1.0rem;
+Color:#404142;
+font-family: 'Saira Semi Condensed', sans-serif;
+padding-left: 3vw;
+margin-left: 5vw;
+
+}
+
+#main p{
+    margin-left: 20px;
+    color: black;
+    font-size: .2in;
+    line-height: 1.6;
+}
+
+#main
+{
+    width:60%;
+    float: left;
+    padding:20px;
+    min-width: 300px;
+    text-align: justify !important;
+
+}
+
+.cnt{
+
+    float: left;
+    border: 1px solid gray;
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    text-align: left;
+    color: black;
+    margin-left: 16px;
+    margin-top:18px; 
+    background-color: #f9f9f9;
+    
+
+}
+
+
+.fix-bg h1 {
+    position: absolute;
+    top: 75%;
+    left: 8.5%;
+    bottom: auto;
+    right: auto;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0 1px 10px rgba(0,0,0,1);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Saira Semi Condensed', sans-serif;
+
+}
+
+.fix-bg {
+    background-image: url('../img/imgf/1.JPG');
+    height: 360px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.xi{
+    border:1px solid #eee;
+    background-color:rgba(188, 197, 252, 0.1);
+    padding-right: 15px;
+}
+.ix{
+    border:1px solid #eee;
+    background-color:rgba(188, 197, 252, 0.1);
+    margin-block-start: 30px;
+    padding-right: 15px;
+}
+a{
+    color:#FB7403;
+}
+.footer {
+    clear: both;
+    position: relative;
+    /* height: 40px; */
+    /* margin-top: -20px; */
+}

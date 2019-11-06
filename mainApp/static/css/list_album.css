@@ -1,0 +1,263 @@
+.breadcrump{
+    margin-left: 4vw;
+    padding-left: 4vw;
+    margin-top: 10px;
+
+    }
+    .breadcrump span{
+        padding: 0 7px;
+        color: #FB7403;
+    }
+    .breadcrump span a{
+        text-decoration: none;
+        color: black;
+    }
+    .breadcrump span a:hover{
+        color:#FB7403;
+    }
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: .1em;
+    margin-block-end: .1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: .1em;
+    margin-block-end: .1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+.container {
+  
+  width: 100%;
+
+}
+
+/* Clear floats */
+.container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+
+}
+
+
+
+.column {
+  width: 180px;
+  float: left;
+
+  padding: 10px;
+ 
+  margin-bottom: 22px;
+
+margin-left: 20px;
+  
+  
+
+}
+
+.row{
+	padding-left: 3vw;
+	margin-left: 4vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/* Clear floats after image containers */
+.row::after { content: "";
+  clear: both;
+  display: table;
+ 
+    margin: auto;
+}
+
+/*card kaa cantain*/
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    height: 200px;
+	width: 180px;
+	align-self: center;
+
+    text-align: center;
+
+}
+
+.bg
+{
+		
+		height: 160px;
+		width: 180px;
+		align-self: center;
+		position: relative;
+		background-repeat: no-repeat;
+	    background-size: 100% 100%;
+		z-index: -1;
+		border: 1px solid #eee;
+		padding:7px 0px;
+
+}
+
+.img1
+{
+    height: 165px;
+    width: 180px;
+     border: 1px solid #f00;
+ border-radius: 10px;
+ padding-bottom: 10px;
+  z-index: 2;
+}
+
+.img2
+{
+  
+    content: '';
+    background: url('../img/list_album/icon.png') no-repeat center center;
+    position: absolute;
+    height: 165px;
+    width: 165px;
+    display: block;
+
+}
+
+
+
+.title {
+    color: grey;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.main {
+  
+  flex: 60%;
+  padding: 20px;
+ 
+}
+
+.main1{
+	flex:65%;
+	float: left;
+	
+}
+
+.contain{
+	
+
+}
+.side{
+	flex: 40%;
+	padding: 20px;
+}
+
+
+
+@media only screen and (max-width:1000px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:1000px) {
+
+	.container
+	{
+		width: 100%;
+		padding-left:40px;
+	}
+	.card ,.bg
+	{
+		width: 200px;
+	}
+
+}
+
+@media only screen and (max-width:400px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+.fix-bg{
+		background-image: url('../img/imgf/1.JPG');
+		height: 360px;
+		width: 100%;
+		position: relative;
+		background-size: cover;
+	    background-attachment: fixed; 
+		z-index: -1;
+	}
+	.fix-bg h1{
+		position: absolute;
+		top: 75%;
+		left: 10%;
+		bottom: auto;
+		right: auto;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 2.5rem;
+		font-weight: bold;
+        color: white;
+        text-shadow: 0 1px 10px rgba(0,0,0,1);
+
+    }
+    
+     @media screen and (max-width: 600px) {
+  
+
+    .fix-bg
+    {
+        width: 100%;
+         background-size: contain;
+         background-repeat: no-repeat;
+    }
+}   
+
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  
+ 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+text-shadow: 0 4px 15px rgba(0,0,0,1);
+font-family: 'Saira Semi Condensed', sans-serif !important;
+font-weight: bold;
+
+
+}
+
+
+
+.container:hover .overlay {
+
+  opacity: 1;
+}
+

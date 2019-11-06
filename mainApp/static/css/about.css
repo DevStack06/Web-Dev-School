@@ -1,0 +1,104 @@
+.container-1{
+	margin-left: 5vw;
+  margin-right:5vw; 
+}
+.container-2{
+    padding-left: : 5vw;
+  padding-right:5vw; 
+  padding-bottom: 120px;
+}
+p.ex2 {
+    border: 1px ; 
+    margin: 35px;
+    padding: 29px;
+    text-align: justify;
+    text-justify: inter-word;
+    color:#404142;
+font-family: 'Saira Semi Condensed', sans-serif;
+
+}
+
+
+img{
+	height: 360px;
+	width: 100%;
+}
+
+
+.breadcrump{
+    margin-left: 4vw;
+    padding-left: 4vw;
+    margin-top: 10px;
+    color:#404142;
+font-family: 'Saira Semi Condensed', sans-serif;
+
+
+    }
+    .breadcrump span{
+        padding: 0 7px;
+        color: #FB7403;
+    }
+    .breadcrump span a{
+        text-decoration: none;
+        color: black;
+    }
+    .breadcrump span a:hover{
+        color:#FB7403;
+    }
+
+
+    .fix-bg{
+        background-image: url('../img/principle/prayas1.JPG');
+        height: 360px;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        
+        overflow: hidden;
+        /*z-index: 1;*/
+    }
+
+h1{
+     text-align: center;
+    font-size: 2.3rem;
+    color: #68202d;
+    margin:0;
+    font-family: 'Saira Semi Condensed', sans-serif;
+
+
+}
+h2{
+     text-align: center;
+    font-size: 2.3rem;
+    color: #68202d;
+    margin:0;
+    font-family: 'Saira Semi Condensed', sans-serif;
+
+
+}
+
+video{
+    height: 300px;
+    width: 380px;
+}
+
+
+ @media screen and (max-width: 600px){
+    video{
+        height:130px;
+        width: 280px;
+    }
+    
+   p.ex2 {
+    border: 1px ; 
+    margin: 5px;
+    padding: 29px;
+    text-align: justify;
+    text-justify: inter-word;
+    color:#404142;
+font-family: 'Saira Semi Condensed', sans-serif;
+
+}
+ 
+}
+

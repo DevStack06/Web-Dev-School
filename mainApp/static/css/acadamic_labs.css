@@ -1,0 +1,190 @@
+img{
+    height: 250px;
+    width: 400px;
+    float: right;
+    margin-right: 2%;
+    margin-left: 2%;
+
+
+}
+@media only screen and (max-width: 683px) {
+    img {
+        float: left;
+        
+        margin-right:auto;
+        margin-left: 4%;
+        height: 200px;
+        width: 90%;
+        overflow: hidden;
+        background-size:cover;
+    }
+}
+
+    
+    .breadcrump{
+        margin-left: 4vw;
+        padding-left: 4vw;
+        margin-top: 10px;
+    
+        }
+        .breadcrump span{
+            padding: 0 7px;
+            color: #FB7403;
+        }
+        .breadcrump span a{
+            text-decoration: none;
+            Font-size:1.0rem;
+            Color:#404142;
+            font-family: 'Saira Semi Condensed', sans-serif;
+        }
+        .breadcrump span a:hover{
+            color:#FB7403;
+        }
+    hr {
+        opacity: .4;
+        display: block;
+        unicode-bidi: isolate;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+    }
+
+    #main p{
+        text-align: justify !important;
+        width: 45%;
+        min-width: 250px;
+        margin-left: 60px;
+    }
+    
+    .breadcrump{
+        margin-left: 4vw;
+        padding-left: 4vw;
+        margin-top: 10px;
+    
+        }
+        .breadcrump span{
+            padding: 0 7px;
+            color: #FB7403;
+        }
+        .breadcrump span a{
+            text-decoration: none;
+            Font-size:1.0rem;
+            Color:#404142;
+            font-family: 'Saira Semi Condensed', sans-serif;
+        }
+        .breadcrump span a:hover{
+            color:#FB7403;
+        }
+    hr {
+        opacity: .4;
+        display: block;
+        unicode-bidi: isolate;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+    }
+#main{
+    width: 70%;
+
+    text-align: left;
+    margin-block-start: 0px;
+    Font-size:1.0rem;
+    Color:#404142;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    padding-left: 4vw;
+    margin-left: 6vw;
+    padding:20px;
+    line-height: 1.6;
+    min-width: auto;
+
+}
+@media only screen and (max-width: 683px) {
+    #main {
+        width: 100%;
+        text-align: left;
+        margin-block-start: 0px;
+        Font-size:1.0rem;
+        Color:#404142;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding:20px;
+        line-height: 1.6;
+        min-width: 320px;
+    }
+}
+
+#cheml,#pl,#cl p{
+    margin-left:40px;
+    font-size: .2in;
+}
+#cheml,#pl,#cl h2{
+    margin-left: 15px;
+}
+
+#cheml,#pl,#cl{
+    padding: 1px;
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: .2in;
+    min-width: auto;
+    margin-top:130px;
+    margin-bottom: 130px;
+    border : 1px solid #eee;
+    background-color:rgba(188, 197, 252, 0.1);
+    margin-block-start: 120px;
+}
+	
+#main p{
+    text-align: justify !important;
+    width: 50%;
+    min-width: auto;
+    margin-left: 60px;
+}
+@media only screen and (max-width:683px) {
+    #main p{
+        text-align: justify !important;
+        width: 80%;
+        min-width: auto;
+        margin-left: 20px;
+
+    }
+}
+
+h1{
+    margin-left: 20px;
+}
+
+.fix-bg h1 {
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    bottom: auto;
+    right: auto;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 10px rgba(0,0,0,1);
+}
+.fix-bg{
+    
+    /* background-image: url("computerlabs.jpg"); */
+    background-image:url('../img/principle/prayas1.JPG');
+
+    height: 360px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}

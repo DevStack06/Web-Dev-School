@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href ="{% static "css/footer.css" %}"  />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+</head>
+<body>
+
+<div class="footer">
+	<div class="row1">
+  <div class="fcolumn left">
+    <h1>Contact Us </h1>
+    <p>Daldal Seoni Rd, Industrial Area, Urkura, Raipur, Chhattisgarh 492014 Tel-912345098</p>
+  </div>
+  <div class="fcolumn middle1">
+    <div class="htm">
+    <h1>Connect with us </h1>
+    <div class="ft">
+  	<a href="https://mail.google.com/mail/?view=cm&fs=1&to= boysprayas2000@gmail.com" class="fa fa-envelope">  boysprayas2000@gmail.com</a>
+     
+    
+  </div>
+  </div>
+</div>
+<div class="fcolumn right">
+  
+   <h1>quick links</h1>
+   <div class="ft">
+    <div class="dt">
+    <a href="{% url 'listReview' %}">Student Review</a>
+   <a href="{% url 'contact_us' %}">Contact Us</a> 
+ </div>
+ </div>
+
+</div>
+</div>
+<hr>
+<div class="lgh">
+  <p>Content designed and maintained by abcd web development. </p> 
+</div>
+
+</body>
+</html>

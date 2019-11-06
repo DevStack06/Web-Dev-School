@@ -1,0 +1,71 @@
+{% load static %}
+{% include  'header.html' %} 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href={% static 'css/about.css' %}>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+   
+
+<style>
+
+</style>
+</head>
+
+<body>
+
+
+
+<div class="fix-bg">
+   
+ </div>
+<div class="breadcrump">
+                        <span><a href="#home" title="Home">Institute</a></span> 
+                        &gt;
+                        
+                        <span class="strong-color">About pryas</span> 
+                      </div>
+                      <hr>
+
+
+
+  
+
+<div class="container-1" data-aos="zoom-in-up">
+<center><h1>FEW WORDS ABOUT PRAYAS</h1></center>
+<center><h2><u> RESIDENTIAL SCHOOL FOR BOYS</u></h2></center>
+
+<center><p class="ex2" style="color:#666;"><font size="4">The key objective of Prayas program is to provide quality education to bright and meritorious
+students from Schedule Caste (SCs), Schedule Tribes (STs) and Other Backward caste (OBC) and
+students from naxal affected areas so that they are able to secure their career by securing
+selection in national level competitive examinations. Seats for students are reserved in the
+following pattern: ST(50%), SC(20%), OBC(20%) and General 10%.We sincerely believe that education is not learning of facts instead it is a training
+which makes a mind to think and imagine. That is  the reason we use technology &amp;
+innovative methods which allows students to think more and memorise less which
+will help them to excel in whatever field they choose.  If you dream to be an
+engineer or a doctor and commit yourself to do the smart work then PRAYAS is the
+place where you should see your dreams becoming reality.</font></p></center>
+</div>
+<div class="container-2">
+<center><video   controls>
+  <source src="{% static 'video/abc.mp4' %}">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video></center>
+</div>
+
+
+  {% include  'footer.html' %} 
+
+</body>
+<script>
+  AOS.init();
+</script>
+</html>

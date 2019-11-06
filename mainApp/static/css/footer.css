@@ -1,0 +1,161 @@
+.footer
+{
+  overflow: hidden;
+  background-color: #384366;
+  font-family: 'Saira Semi Condensed', sans-serif !important;
+  letter-spacing: .09rem;
+  /*opacity: 0.7;
+  filter: alpha(opacity=70);*/
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+
+/* Create three unequal fcolumns that floats next to each other */
+.fcolumn {
+    float: left;
+    padding: 5px;
+}
+
+/* Left and right fcolumn */
+.fcolumn.left {
+    width: 35%;
+
+    padding-right:30px; 
+    padding-left: 20px;
+
+}
+
+/* Middle fcolumn */
+.fcolumn.middle1 {
+    width: 35%;
+    padding-right:30px; 
+    padding-left: 20px;
+}
+
+.fcolumn.right {
+    width: 30%;
+    padding-right:30px; 
+    padding-left: 20px;
+}
+
+
+/* Clear floats after the fcolumns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three fcolumns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .fcolumn.left, .fcolumn.middle1 , .fcolumn.right{
+        width: 100%;
+    }
+
+    .fcolumn.middle1{
+      padding-right:0px;
+      margin:0px;
+    }
+    .ft{
+      padding-left:0;
+      margin:0;
+    }
+}
+
+.htm a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: justify;
+  text-align-last:left;
+ 
+}
+
+.footer p
+{
+	float: left;
+  display: block;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  font-size: 15px;
+
+   font-family: 'Saira Semi Condensed', sans-serif !important;
+
+}
+
+
+.fcolumn h1
+{
+  font-size: 20px;
+  color:#ffffff;
+  text-transform: uppercase; 
+  font-family: 'Saira Semi Condensed', sans-serif !important;
+}
+
+.ft 
+{
+  padding-left: 15px;
+}
+
+.htm
+{
+  
+}
+
+.dt a
+{
+   float: none;
+    color: black;
+    margin: 0px;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    font-family: 'Saira Semi Condensed', sans-serif !important;
+    
+    
+}
+
+.lgh p
+{
+  float: none;
+  text-align: center;
+   font-family: 'Saira Semi Condensed', sans-serif !important;
+}
+hr
+{
+  opacity:0.2;
+}
+
+
+.dt a:hover
+{
+  color: orange;
+  transition: 0.6s ease;
+}
+
+.ft a:hover
+{
+ transition: 0.6s ease;
+  color: orange;
+}

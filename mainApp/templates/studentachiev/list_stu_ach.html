@@ -1,0 +1,208 @@
+{% load static %}
+{% include  'header.html' %} 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/list_stu_ach.css' %}">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+ 
+
+<div class="breadcrump">
+                        <span><a href="#home" title="Home">Student</a></span> 
+                        &gt;
+                       
+                        <span class="strong-color">Student achivement</span> 
+                      </div>
+                      <hr>
+
+
+
+
+
+<div style="overflow:auto">
+  <div class="main">
+
+                      
+
+<div class="container" data-aos="zoom-in-up">
+  <div class="cd-container">
+<center><h1><font size="6" ><strong>STUDENTS WHO MADE US PROUD IN  IIT-JEE<strong></font></h1></center>
+  
+</div>
+{% for i in engineers %}
+<div class="column">
+<div class="card" >
+
+  
+  
+  <img src="{{ i.pic.url }}" alt="John">
+  <h3>{{ i.name }} </h3>
+  <p class = "title">{{ i.institute }}</p>
+
+</div>
+</div>
+{% endfor %}
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} <div class="container" data-aos="zoom-in-up">
+  <div class="cd-container">
+<center><h1><font size="6" >STUDENTS WHO MADE US PROUD IN  MEDICAL</font></h1></center>
+  
+</div>
+
+<div class="column">
+<div class="card" >
+
+  
+  
+  <img src="m.jpg" alt="John" style="width:100%" >
+  <h3>student name</h3>
+  <p class = "title">collage name</p>
+
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+
+
+
+
+<div class="column">
+<div class="card" >
+
+  
+  
+  <img src="m.jpg" alt="John" style="width:100%" >
+  <h3>student name</h3>
+  <p class = "title">collage name</p>
+
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="m.jpg" alt="John" style="width:100%">
+  <h3>student name</h3>
+  <p class="title">collage name</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+ {% endcomment %}
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% include  'footer.html' %} 
+
+
+<script>
+  AOS.init();
+</script>
+
+
+
+
+</body>
+</html>

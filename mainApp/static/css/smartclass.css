@@ -1,0 +1,112 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.breadcrump{
+		margin-left: 40px;
+		padding-left: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+        
+	}
+	.breadcrump span{
+		padding: 0 7px;
+		color: #FB7403;
+		font-family: 'Saira Semi Condensed', sans-serif;
+	}
+	.breadcrump span a{
+        text-decoration: none;
+        color: #404142;
+        font-family: 'Saira Semi Condensed', sans-serif;
+	}
+	.breadcrump span a:hover{
+		color:#FB7403;
+		transition: 0.6s ease;
+	}
+	hr{
+		opacity:0.2;
+	}
+	.fix-bg{
+		background-image: url('../img/imgf/1.JPG');
+		height: 360px;
+		width: 100%;
+		position: relative;
+		background-size: cover;
+	    background-attachment: fixed;
+		/*z-index: 1;*/
+	}
+	.fix-bg h1{
+		position: absolute;
+		top: 75%;
+		left: 10%;
+		bottom: auto;
+		right: auto;
+		text-align: left;
+		text-shadow:0 1px 10px rgba(0, 0, 0, 1);
+		text-transform: uppercase;
+		font-size: 2.5rem;
+		font-family: 'Saira Semi Condensed', sans-serif;
+		font-weight: bold;
+        color: #fff;
+
+	}
+	.row{
+		padding-left: 3vw;
+		margin-left: 3vw;
+	}
+	.row::after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+	[class*='col-']{
+		float: left;
+		padding:15px;
+	}
+	.col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}           
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+ p{
+		
+		text-align: justify;
+		color: #404142;
+		font-size: 1.0rem;
+		line-height: 1.6;
+		font-family: 'Saira Semi Condensed', sans-serif;
+	}
+.resize1{
+		width:70%;
+		height:auto;
+		padding:6px;
+		border: 1px solid #ddd;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	 img:hover{
+		opacity: 0.7;
+
+	}
+    @media only screen and (max-width: 768px){
+    	[class*='col']{
+    		width: 100%;
+    	}
+    	div.col-5{
+    		display: none;
+    	}
+    }
+
+	

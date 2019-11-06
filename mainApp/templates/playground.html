@@ -1,0 +1,50 @@
+{% load static %}
+{% include  'header.html' %} 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sports facility at Prayas</title>
+  <meta name="viewport" content="width=device-width, initial-scal=1.0">
+  <link rel="stylesheet" href="{% static "css/playground.css" %}">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+ 
+   <div class="fix-bg">
+   <h1> Play-Ground</h1>
+  </div>
+  <div class="breadcrump">
+    <span><a href="#home" title="Home">Home</a></span> 
+    >
+    <span><a href="#Facility" title="Facility">Facility</a></span> 
+    >
+    <span>Play-Ground</span>
+  </div>
+  <hr>
+<div class="row">
+  <div data-aos="fade-right"  class="col-7">
+    <p>Sports is always loved by students, keeping in mind prayas has provided playground including Basket-ball court, Volley-ball court and badminton court. </p>
+    <p><img src="{% static 'img/imgf/playground1.JPG' %}" class="resize1"></p>
+  </div>
+  <div data-aos="fade-right" class="col-5">
+    <p><img src="{% static 'img/imgf/playground2.JPG' %}" class="resize1"></p>
+    <p><img src="{% static 'img/imgf/playground3.JPG' %}" class="resize1"></p>
+  </div>
+</div>
+<script>
+  AOS.init();
+</script>
+{% include  'footer.html' %} 
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+{% load  static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type = "text/css" href = "{% static 'css/header.css' %}" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="tophead">
+    <div class="hcolumn left">
+    </div>
+    <div class="hcolumn right">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to= boysprayas2000@gmail.com" class="fa fa-envelope"> &nbsp; boysprayas2000@gmail.com </a>
+    
+ 
+  
+  </div>
+</div>
+
+<div class="topnav">
+  <div class="bal">
+  <a href="{% url 'index' %}">PRAYAS RESIDENTIAL SCHOOL SADDU RAIPUR CHHATTISHGARH </a>
+</div>
+</div>
+<div class="topnav" id="myTopnav">
+<div class="balh">
+  <a href="{% url 'index' %}">Home</a>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Institute 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href={% url 'about' %}>About <b>Prayas Raipur</b></a>
+      <a href={% url 'mission' %}>Mission And Vision</a>
+      <a href={% url 'principal' %}>Principal</a>
+      <a href={% url 'listStaff' %}>Staff</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Academics
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'labs' %}">Labs</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Admission
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'admissioninfo' %}">Admission procedure</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Student
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'listStuAchieve' %}">Student Achievement</a>
+
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Faculty
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'listFaculty' %}">Faculty Profile</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Gallery
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'listAlbum' %}">Gallery pics</a>
+    </div>
+  </div> 
+ <div class="dropdown">
+    <button class="dropbtn">Facility
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'smartclass' %}">Smart Class</a>
+      <a href="{% url 'labs' %}">Labs</a>
+      <a href="{% url 'opengym' %}">Open Gym</a>
+      <a href="{% url 'mess' %}">Mess</a>
+      <a href="{% url 'hostel' %}">Hostel</a>
+      <a href="{% url 'playground' %}">Play Ground</a>
+      <a href="{% url 'yoga' %}">Yoga</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Quick Links
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="{% url 'contact_us' %}">Contact Us</a>
+       <a href="{% url 'listReview' %}">Students Review</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+ 
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+</body>
+</html>

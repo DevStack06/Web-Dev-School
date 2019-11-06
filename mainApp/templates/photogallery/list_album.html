@@ -1,0 +1,415 @@
+{% comment %} <div>
+
+{% for album in object_list %}
+    <p>
+    {{ album.name }}
+    
+    <a href=" {% url 'updateAlbum' album.id %} ">update</a>
+    <a href=" {% url 'listPhoto' pk=album.id %} ">view</a>
+    
+    <a href=" {% url 'addPhoto' pk=album.id %}">add photo</a>
+    <a href=" {% url 'deleteAlbum' album.id %}">delete</a>
+    
+    </p>
+{% endfor %}
+</div>
+
+<a href=" {% url 'addAlbum' %} ">add new new album</a> {% endcomment %}
+{% load staticfiles %}
+{% include  'header.html' %} 
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type = "text/css" href = "{% static 'css/list_album.css' %} " />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+<body>
+	<!--HEADER CODE END-->
+  <div class="fix-bg">
+   <h1>Gallery</h1>
+  </div>
+	<div class="breadcrump">
+    <span><a href="#home" title="Home">Home</a></span> 
+    >
+    <span><a href="#" title="quick links">Gallery</a></span> 
+    >
+    <span>Gallery pics</span>
+  </div>
+
+	<hr>
+		
+	
+<!--two column container-->
+
+<div class="row">
+	<div class="main" data-aos="fade-right">
+		<div class="contain">
+
+<div class="container" data-aos="zoom-in-up">
+
+
+
+{% comment %} <div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div> {% endcomment %}
+{% for album in object_list %}
+<div class="column">
+
+<div class="card" >
+   <a href="{% url 'listPhoto' album.id %} " >
+  <div class="bg" >
+
+    <div class="img2" ></div>
+    <img src="{{MEDIA_URL}}{{album.thumbnail.url}}" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+  <h3>{{album.name}}</h3>
+  
+</div>
+</div>
+{% endfor %}
+
+{% comment %} <div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div>
+
+<div class="column">
+
+<div class="card" >
+   <a href="#" >
+  <div class="bg" >
+
+    <div class="img2"></div>
+    <img src="m.jpg" style="border:0;" class="img1" >
+
+  
+   </div>
+ </a>
+   
+  <h3>folder name</h3>
+  
+</div>
+</div> {% endcomment %}
+
+
+
+
+
+	</div>
+	</div>
+</div>
+</div>
+{% include  'footer.html' %} 
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
+

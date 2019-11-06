@@ -1,0 +1,97 @@
+{% load static %}
+{% include  'header.html' %} 
+{% comment %} <div>
+{% for Faculty in object_list %}
+    <p>
+    {{ Faculty.name }}
+    <img src="{{MEDIA_URL}}{{Faculty.pic.url}}" height="400" width="400"/>
+    {{Faculty.desc}}
+    </p>
+{% endfor %}
+</div> {% endcomment %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="seet.css">
+    <link rel="stylesheet" type="text/css" href="{% static "css/Faculty_list.css" %}">
+    <link rel="stylesheet" href="{% static "css/cssAdm.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+  <div class="fix-bg">
+   <h1>Faculty</h1>
+  </div>
+	<div class="breadcrump">
+		<span><a href="#home" title="Home">Home</a></span> 
+		>
+		<span><a href="#Faculty" title="Faculty">Faculty</a></span> 
+		>
+		<span class="strong-color">Faculty Profile</span> 
+	</div>
+	<hr>
+  <!--two column container-->
+<div class="row">
+	<div class="main" data-aos="fade-right">
+		<div class="contain">
+        {% for Faculty in object_list %}
+			<div class="faculty-box">
+			<div class="faculty-content ">
+				<h3><strong>{{ Faculty.name }}</strong></h3>
+				<hr>
+				<div><img class="imageleft" src="{{MEDIA_URL}}{{Faculty.pic.url}}" alt="Faculty picture" ></div>
+           
+				<div class="faculty-right">
+					<p><strong >Qualification :</strong>{{ Faculty.qual }}</p>
+					<p><strong >Email-Id :</strong>{{ Faculty.email }}</p>
+					<p><strong >About :</strong> {{ Faculty.desc }}</p>
+				</div>
+			</div>
+		</div>
+        {% endfor %}
+		{% comment %} <div class="Faculty-box" data-aos="zoom-in-up">
+			<div class="Faculty-content InsideContent">
+				<h3><strong>Raju Rastogi</strong></h3>
+				<hr>
+				<p><img class=imageleft src="image/raju.jpg" alt="Faculty picture" ></p>
+           
+				<div class="Faculty-right InsideContent">
+					<p><strong>Qualification :</strong> M-tech (ICP college of Engineering)</p>
+					<p><strong>Email-Id :</strong> RajuRastogi00@gmail.com</p>
+					<p><strong>About :</strong> Sharman Joshi (born 28 April 1979) is an Indian film and theatre actor. He has worked on and ... lead role in the Bollywood movies Kaashi in Search of Ganga and 3 Storeys. He is best known for his role as Raju Rastogi in the movie 3 idiots.</p>
+				</div>
+			</div>
+		</div> {% endcomment %}
+	</div>
+	</div>
+		<div class="side" data-aos="fade-right">
+		<div class="content">
+			<div class="cnt">
+                     <h2>Contact</h2>
+            <div class="addresspart1">
+            <p> Boys Prayas Residential School Raipur, <span>Saddu</span> – 492014&nbsp;Chhattisgarh</p>
+           
+            </div>
+            <div class="addresspart2">
+            <p><strong>General Information:- &nbsp;</strong><a >boysprayas2000@gmail.com</a></p>
+            </div>
+            <div class="addresspart3">
+            <p><strong>Route from Raipur Railway Station to Prayas: &nbsp;</strong><a href="https://www.google.co.in/maps/dir/Raipur+Railway+Station,+Station+Road,+Moudhapara,+Raipur,+Chhattisgarh/prayas+raipur+saddu/@21.2802181,81.6450402,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3a28dd8de81cf16b:0xabd511ae8a3c3287!2m2!1d81.6301711!2d21.2567191!1m5!1m1!1s0x3a28e7e7c999afdd:0xe195ce5e2cff16b3!2m2!1d81.6814378!2d21.2907823">https://maps.app.goo.gl/i/wf7CV</a></p>
+            <p><strong>Route from Raipur Airport to Prayas: &nbsp;</strong><a href="https://www.google.co.in/maps/dir/Airport+Road,+Mana+Camp,+Barauda,+Chhattisgarh/prayas+raipur+saddu/@21.239509,81.6831382,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3a28c36845a67f0d:0x24c1555468d87d9e!2m2!1d81.7149023!2d21.1917409!1m5!1m1!1s0x3a28e7e7c999afdd:0xe195ce5e2cff16b3!2m2!1d81.6814378!2d21.2907823">https://maps.app.goo.gl/i/wf7CV</a></p><p><strong>Useful Services:</strong></p>
+            <p><strong>OLA Cabs :</strong> 80673 50900</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include  'footer.html' %} 
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

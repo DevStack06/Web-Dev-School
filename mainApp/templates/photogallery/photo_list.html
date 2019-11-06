@@ -1,0 +1,291 @@
+
+
+{% load staticfiles %}
+{% include  'header.html' %} 
+{% load my_tags %}
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>prays gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel = "stylesheet" type = "text/css" href = "{% static 'css/lightbox.min.css' %} " />
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'css/list_photos.css' %} " />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+</head>
+<body>
+
+  <div class="fix-bg">
+   <h1>Gallery</h1>
+  </div>
+  <div class="breadcrump">
+    <span><a href="#home" title="Home">Home</a></span> 
+    >
+    <span><a href="#" title="quick links">Gallery</a></span> 
+    >
+
+     <span><a href="#" title="quick links">Gallery pics</a></span> 
+    >
+    <span>Image folder</span>
+  </div>
+
+  <hr>
+
+
+{% if object_list %}
+  <div class="row">
+  <div class="column">
+ 
+  {% for j in object_list %}
+   
+  
+  {% if forloop.counter|modulo:4 == 1 %}
+    <div class="container">
+      
+      <a class="example-image-link" href="{{MEDIA_URL}}{{j.pic.url}}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="{{MEDIA_URL}}{{j.pic.url}}" alt=""/></a>
+     <div class="overlay">{{j.name}}</div>
+    </div>
+{% endif %}
+{% endfor %}
+</div>
+
+ <div class="column">
+ 
+  {% for j in object_list %}
+   
+  
+  {% if forloop.counter|modulo:4 == 2 %}
+    <div class="container">
+      
+      <a class="example-image-link" href="{{MEDIA_URL}}{{j.pic.url}}"  data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="{{MEDIA_URL}}{{j.pic.url}}" alt=""/></a>
+    <div class="overlay">{{j.name}}</div>
+    </div>
+{% endif %}
+{% endfor %}
+</div>
+
+ <div class="column">
+ 
+  {% for j in object_list %}
+   
+  
+  {% if forloop.counter|modulo:4 == 3 %}
+    <div class="container">
+      
+      <a class="example-image-link" href="{{MEDIA_URL}}{{j.pic.url}}" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="{{MEDIA_URL}}{{j.pic.url}}" alt=""/></a>
+    <div class="overlay">{{j.name}}</div>
+    </div>
+{% endif %} 
+{% endfor %}
+</div>
+
+ <div class="column">
+ 
+  {% for j in object_list %}
+   
+  
+  {% if forloop.counter|modulo:4 == 0 %}
+    <div class="container">
+      
+      <a class="example-image-link" href="{{MEDIA_URL}}{{j.pic.url}}"  data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="{{MEDIA_URL}}{{j.pic.url}}" alt=""/></a>
+    <div class="overlay">{{j.name}}</div>
+    </div>
+{% endif %}
+{% endfor %}
+</div>
+
+{% comment %} <div class="column">
+  {% for i in range(len(object_list)) %}
+  {% if i % 4==0 %}
+    <div class="container">
+      
+      <a class="example-image-link" href="3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="{{MEDIA_URL}}{{object_list[i].pic.url}}" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+{% endif %}
+{% endfor %}
+</div>
+
+
+<div class="column">
+  {% for i in range(len(object_list)) %}
+  {% if i%4==0 %}
+    <div class="container">
+      
+      <a class="example-image-link" href="3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="{{MEDIA_URL}}{{object_list[i].pic.url}}" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+{% endif %}
+{% endfor %}
+</div>
+
+
+<div class="column">
+  {% for i in range(len(object_list)) %}
+  {% if i%4==0 %}
+    <div class="container">
+      
+      <a class="example-image-link" href="3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="{{MEDIA_URL}}{{object_list[i].pic.url}}" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+{% endif %}
+
+{% endfor %}
+</div>
+
+</div> {% endcomment %}
+</div>
+{% endif %}
+<script src="{% static "js/lightbox-plus-jquery.min.js" %}"></script>
+ 
+
+<!---
+    <div class="container">
+      
+      <a class="example-image-link" href="4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="4.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="5.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+    <div class="container">
+      
+      <a class="example-image-link" href="6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="6.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="7.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+    
+    </div>
+
+<div class="column">
+    <div class="container"> 
+
+       <a class="example-image-link" href="3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="3.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="4.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="5.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+    <div class="container">
+      
+      <a class="example-image-link" href="6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="6.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="7.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+  </div>
+
+
+
+<div class="column">
+    <div class="container"> 
+
+       <a class="example-image-link" href="3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="3.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="4.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="5.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+    <div class="container">
+      
+      <a class="example-image-link" href="6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="6.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="7.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+  </div>
+
+
+
+
+<div class="column">
+    <div class="container"> 
+
+       <a class="example-image-link" href="3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="3.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="4.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="5.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+    <div class="container">
+      
+      <a class="example-image-link" href="6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="6.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+
+
+    <div class="container">
+      
+      <a class="example-image-link" href="7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="image" src="7.jpg" alt=""/></a>
+    <div class="overlay">name of the image</div>
+    </div>
+  </div>
+-->
+{% include  'footer.html' %} 
+</body>
+</html>

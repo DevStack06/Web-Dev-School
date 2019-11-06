@@ -1,0 +1,80 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-left: 5vw;
+  margin-right:5vw; 
+
+
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+p.ex2 {
+    border: 1px ; 
+    margin: 35px;
+    padding: 29px;
+    text-align: justify;
+    text-justify: inter-word;
+    color:#404142;
+font-family: 'Saira Semi Condensed', sans-serif;
+
+    
+
+}
+
+
+
+
+
+.breadcrump{
+    margin-left: 4vw;
+    padding-left: 4vw;
+    margin-top: 10px;
+    color:#404142;
+font-family: 'Saira Semi Condensed', sans-serif;
+
+
+    }
+    .breadcrump span{
+        padding: 0 7px;
+        color: #FB7403;
+    }
+    .breadcrump span a{
+        text-decoration: none;
+        color: black;
+    }
+    .breadcrump span a:hover{
+        color:#FB7403;
+    }
+    
+.fix-bg{
+        background-image: url('../img/principle/mission.JPG');
+        height: 360px;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        
+        overflow: hidden;
+        /*z-index: 1;*/
+    }
+
+
+     @media screen and (max-width: 600px){
+    p.ex2 {
+     
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    color:#404142;
+font-family: 'Saira Semi Condensed', sans-serif;
+margin-bottom: 60px;
+
+    
+
+}}

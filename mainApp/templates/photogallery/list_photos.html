@@ -1,0 +1,219 @@
+{% comment %} 
+<div>
+<div>
+<a href=" {% url 'listAlbum'  %} ">albums</a>
+<div>
+<p>{{"album name :"}}{{albumname}}</p>
+<p>{{"description:"}}{{albumdesc}}</p>
+{{object_list|length }}
+{% for photo in object_list %}
+    
+    <p>
+    {% if photo.pic%}
+    <img src="{{MEDIA_URL}}{{photo.pic.url}}" height="400" width="400"/>
+    {% endif %}
+    <a href=" {% url 'deletePhoto' picid=photo.id pk=albumid %} ">delete</a>
+    
+    {% comment %} <img src="{{MEDIA_URL}}{{faculty.pic.url}}" height="400" width="400"/>
+    {{faculty.desc}} {% endcomment %}
+    {% comment %} <a href=" {% url 'updateAlbum' album.id %} ">update</a>
+    <a href=" {% url 'deleteAlbum' album.id %}">delete</a> {% endcomment %}
+    {% comment %} </p>
+{% endfor %}
+</div>
+{% if albumid is not NULL%}
+
+<a href=" {% url 'addPhoto' pk=albumid %} ">add new photo</a>
+{% endif %} {% endcomment %} 
+{% load staticfiles %}
+{% include  'header.html' %} 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" type = "text/css" href = "{% static 'css/list_photos.css' %} " />
+<link rel="stylesheet" href="cssAdm.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+  <!--HEADER CODE END-->
+  <div class="fix-bg">
+   <h1>folder name</h1>
+  </div>
+  <div class="breadcrump">
+    <span><a href="#home" title="Home">Home</a></span> 
+    >
+    <span><a href="#" title="quick links">GAllery</a></span> 
+    >
+     <span><a href="#" title="quick links">GAllery pics</a></span> 
+    >
+
+    <span>folder name</span>
+  </div>
+
+
+<div class="container">
+
+
+{% for photos in object_list %}
+<div class="column">
+<div class="card" >
+
+  <img src="{{MEDIA_URL}}{{photos.pic.url}}" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  
+  <h3>student name</h3>
+ 
+
+</div>
+</div>
+{% endfor %}
+
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 4</div>
+      <img src="ex.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 4</div>
+      <img src="ex1.JPG" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    
+  </div>
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 4</div>
+      <img src="prayas.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 4</div>
+      <img src="ex.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 4</div>
+      <img src="ex1.JPG" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+{% include  'footer.html' %} 
+</body>
+</html>

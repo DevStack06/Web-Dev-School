@@ -1,0 +1,51 @@
+{% load static %}
+{% include  'header.html' %} 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fitness at Prayas</title>
+  <meta name="viewport" content="width=device-width, initial-scal=1.0">
+  <link rel="stylesheet" href="{% static "css/opengym.css" %}">
+  <link rel="stylesheet" href="../seet.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+   <div class="fix-bg">
+   <h1> Open-Gym</h1>
+  </div>
+  <div class="breadcrump">
+    <span><a href="#home" title="Home">Home</a></span> 
+    >
+    <span><a href="#Facility" title="Facility">Facility</a></span> 
+    >
+    <span>Open-Gym</span>
+  </div>
+  <hr>
+<div class="row">
+  <div data-aos="fade-right"  class="col-7">
+    <p>Prayas is focused to provide quality education doesn't means it's neglecting other aspects of students life. It is also concerned with the fitness and health of students and for that there is a open-gym arena inside prayas's campus where students can do their daily exercise to make their body and minds healthy.</p>
+    <p><img src="{% static 'img/imgf/gym1.JPG' %}" class="resize1"></p>
+  </div>
+  <div data-aos="fade-right" class="col-5">
+    <p><img src="{% static 'img/imgf/gym2.jpg' %}" class="resize1"></p>
+    <p><img src="{% static 'img/imgf/gym3.JPG' %}"  class="resize1"></p>
+  </div>
+</div>
+<script>
+  AOS.init();
+</script>
+{% include  'footer.html' %} 
+</body>
+</html>
+
+
+
+
+
+
+
+
+

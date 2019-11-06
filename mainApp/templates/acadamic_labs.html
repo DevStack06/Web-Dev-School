@@ -1,0 +1,98 @@
+{% load static %}
+{% include  'header.html' %} 
+
+<!Doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Labs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/acadamic_labs.css' %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Saira+Semi+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+    </head>
+    <body >
+             <div class="fix-bg"  >
+                    <h1>Labs</h1>
+                </div>
+
+
+                    <div class="breadcrump">
+                        <span><a href="#home" title="Home">Home</a></span> 
+                        &gt;
+                        <span><a href="#Acadamics" title="Acadamics">Acadamics</a></span> 
+                        &gt;
+                        <span class="strong-color">Lab</span> 
+                      </div>
+
+                      <hr>
+
+                <div id="main">
+                    
+                    <div>
+                      <div data-aos="zoom-in-up">
+                        <div id = 'cl' >
+                          
+                          <h1>Computer Lab</h1>
+                          <hr>
+                          <img src="{% static 'img/acadamic_labs/compu.jpg' %}">
+                          
+                          <p>This is our Computer lab.There are 60 computer runs on windows 10.
+                          Students are allowed to use these labs for computer related task,fill there online forms during exam time.
+                          Students need to take permission from lab assistent and after that they can use alloted system. Students, 
+                          faculty and staff have access to the computer labs, which provide the tools and technologies to produce websites, edit papers,
+                           complete class assignments, communicate via email, conduct data analyses and access library resources. 
+                          Microsoft Windows software is available for word processing, statistics, spreadsheets and database management. </p>
+                          
+                      </div>
+                    </div>
+                    <div  data-aos="zoom-in-up">
+                        <div id = 'cheml' >
+                         
+                            <h1>Chemistry Lab</h1>
+                            <hr>
+                            <img src="{% static 'img/acadamic_labs/Chem.jpeg' %}" alt="Hey Men..!!" width="450px" height="280px">
+                            
+                            <p>
+                                    We have chemistry lab.Bubbling test tubes, explosions, and color-changing liquids 
+                                    are often what students think about when they hear the word ''chemistry.'' Experimental chemistry can help 
+                                    students explore and apply concepts about chemistry. The general chemistry laboratory is designed to support
+                                    and illustrate chemical concepts studied in the lecture portion of the course, as well as to introduce important 
+                                    laboratory techniques and encourage analytical thinking. Students are allowed to perform experiment under only instructor's supervision. 
+                                    This lab is also use for students final lab exam.</p>
+                            
+                      </div>
+                    </div>
+                    <div data-aos="zoom-in-up">
+                        <div id = 'pl'>
+                            
+                            <h1>Physics Lab</h1>
+                            <hr>
+                            <img src="{% static 'img/acadamic_labs/physics.jpg' %}" alt="Hey Men..!!">
+                            
+                            <p>We have physics lab in which students can perform various experiments and explore different componets. 
+                            The Purpose of the Laboratory. Physics is an experimental science. 
+                            The theoretical concepts and relationships introduced in the lecture part of the course describe 
+                            the general nature and behavior of real phenomena. Students are allowed perform their experiments under 
+                            instructor supervision.Same lab will also use for their final  physics experiments  exams.</p>
+                            
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+        </div>
+
+        {% include  'footer.html' %} 
+        <script>
+          AOS.init();
+        </script>      
+    </body> 
+
+</html>
+

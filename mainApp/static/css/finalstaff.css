@@ -1,0 +1,131 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	padding: 0;
+}
+.breadcrump{
+    margin-left: 4vw;
+    padding-left: 4vw;
+    margin-top: 10px;
+
+	}
+	.breadcrump span{
+		padding: 0 7px;
+		color: #FB7403;
+		font-family: 'Saira Semi Condensed', sans-serif;
+
+	}
+	.breadcrump span a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Saira Semi Condensed', sans-serif;
+
+	}
+	.breadcrump span a:hover{
+		color:#FB7403;
+	}
+.fix-bg{
+		background-image: url('../img/faculty_list/1.JPG');
+		height: 360px;
+		width: 100%;
+		position: relative;
+		background-size: cover;
+	    background-attachment: fixed;
+	}
+	
+.fix-bg h1{
+		position: absolute;
+		top: 75%;
+		left: 10%;
+		bottom: auto;
+		right: auto;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 2.5rem;
+		font-weight: bold;
+        color: white;
+        text-shadow:0 1px 10px rgba(0, 0, 0, 1);
+  		font-family: 'Saira Semi Condensed', sans-serif;
+	}
+	
+.row{
+	padding-left: 3vw;
+	margin-left: 4vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+.main{
+	flex:70%;
+	padding:20px;
+}
+.contain{
+	
+
+}
+.faculty-box{
+		border:1px solid #eee;
+		width:100%;
+		height: auto;
+		float:left;
+		position: relative;
+		background-color: #f9f9f9;
+		padding: 0px;
+		margin-bottom: 25px;
+	}
+.faculty-content{
+			position: relative;
+		
+			padding:0px 20px; 
+			font-size:1.0rem;
+            color:#404142;
+            font-family: 'Saira Semi Condensed', sans-serif;
+		}
+		.InsideContent{
+			display: inline;
+		}
+		.imageleft{
+			float:left;
+			padding-right: 10px;
+			height:120px;
+			width:100px;
+		}
+		.faculty-right{
+			margin-left:1px;
+            width: 80%;
+        }
+
+.side{
+	flex: 30%;
+	padding: 20px;
+    }
+ .main strong{
+			color:#FB7403;
+		   }
+
+.main p{
+	  text-align: justify !important;
+	  color: #404142;
+	  font-size: 1.0rem;
+	  font-family: 'Saira Semi Condensed', sans-serif;
+
+		}
+hr{
+		opacity:0.2;
+	}
+
+  @media screen and (max-width: 600px){
+	.main{
+		flex: 100%;
+		max-width: 100%;
+	}
+	.side{
+		flex: 100%;
+		max-width: 100%;
+	}
+	.fix-bg{
+			background-size: 100% 100% !important;
+		}
+	
+}
