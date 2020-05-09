@@ -1,5 +1,5 @@
 
-Django==3.0.1
+Django==3.0.3
 Jinja2==2.10.3
 Pillow==6.2.0
 PyMySQL==0.9.3
