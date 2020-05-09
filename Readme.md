@@ -15,4 +15,4 @@ If anyone want to use this project so he/she can clone this project and run usin
 4. Run the django app using below command-
    > python3 manage.py runserver
 
-**Note-:It was our first project on this maybe all code are unavailble :wink:**
+**Note-:It was our first project on this maybe all code are unavailble :sweat_smile:**
